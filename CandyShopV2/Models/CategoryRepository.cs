@@ -14,7 +14,7 @@ namespace CandyShopV2.Models
             _appDbContext = appDbContext;
         }
 
-        public IEnumerable<Catagory> GetCategories => _appDbContext.categories;
+        public IEnumerable<Catagory> GetCategories => _appDbContext.Categories;
 
 
     }

@@ -23,7 +23,14 @@
         }
     </tbody>
     <tfoot>
+        <tr>
         <td colspan="3" class="text-right"> Total </td>
         <td class="text-right"> @Model.ShoppingCardTotal.ToString("c") </td>
+         </tr>
     </tfoot>
 </table>
+
+
+<div class="text-center">
+    <a class="btn btn-primary" asp-controller="Order" asp-action="Checkout"> Checkout </a>
+</div>

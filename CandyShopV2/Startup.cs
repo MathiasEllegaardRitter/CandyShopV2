@@ -32,7 +32,7 @@ namespace CandyShopV2
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ICandyRepository, CandyRepository>();
             services.AddScoped<ShoppingCard>(sc => ShoppingCard.GetCard(sc));
-
+            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddHttpContextAccessor();
             services.AddSession();
 
@@ -51,6 +51,7 @@ namespace CandyShopV2
             app.UseSession();
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

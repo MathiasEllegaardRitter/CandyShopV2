@@ -101,9 +101,5 @@ namespace CandyShopV2.Models
             return total;
 
         }
-
-
-
-
     }
 }

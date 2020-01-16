@@ -16,7 +16,7 @@ namespace CandyShopV2.Controllers
         {
             _candyRepository = candyRepository;
         }
-
+        
         public IActionResult Index()
         {
             var homeViewModel = new HomeViewModel

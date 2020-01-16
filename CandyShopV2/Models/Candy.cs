@@ -16,7 +16,7 @@ namespace CandyShopV2.Models
         public  bool IsOnStock { get; set; }
         public Catagory Catagory { get; set; }
         public int CatagoryId { get; set; }
-        public float Price { get; set; }
+        public decimal Price { get; set; }
     }
 
 }
